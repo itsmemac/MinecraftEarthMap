@@ -60,7 +60,7 @@ function displayDMS(){
 	
 	var latitude_dec = 0;
 	if(latitude_direction == "south"){
-		latitude_dec = -1 * (latitude_hour / 1) + (latitude_minute / 60) + (latitude_second / 3600);
+		latitude_dec = -1 * ((latitude_hour / 1) + (latitude_minute / 60) + (latitude_second / 3600));
 	}else if(latitude_direction == "north"){
 		latitude_dec = ((latitude_hour / 1) + (latitude_minute / 60) + (latitude_second / 3600));
 	}
